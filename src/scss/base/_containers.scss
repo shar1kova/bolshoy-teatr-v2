@@ -1,0 +1,28 @@
+.container {
+	padding: 0 $container-padding;
+	max-width: $container-width;
+	margin: 0 auto;
+}
+
+.container-right {
+	 overflow-x: hidden;
+
+	padding-left: calc(
+		(100% - $container-width) / 2 + $container-padding
+	);
+	@media (max-width: $laptop-mini-size) {
+		padding-left: $container-padding;
+	}
+
+}
+
+.container-left {
+	 overflow-x: hidden; 
+	padding-right: calc(
+		(100% - $container-width) / 2 + $container-padding
+	);
+
+	@media (max-width: $laptop-size) {
+		padding-right: $container-padding;
+	}
+}

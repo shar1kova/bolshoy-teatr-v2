@@ -1,0 +1,93 @@
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/open-sans-v36-cyrillic-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Open Sans Condensed";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/OpenSansCondensed-Bold.ttf"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Open Sans Condensed";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/OpenSansCondensed-Light.ttf"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: $page-bg;
+  color: $text-color;
+  font-family: "Open Sans Condensed";
+  font-weight: 300;
+}
+
+.title-1 {
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 6.4px;
+  text-transform: uppercase;
+}
+
+.title-2 {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 4.8px;
+  text-transform: uppercase;
+  margin-bottom: 100px;
+  @media (max-width: $tablet-size) {
+    margin-bottom: 60px;
+  }
+
+  text-align: center;
+  span {
+    color: #d1a954;
+  }
+}
+
+.text {
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 21px */
+}
+
+.btn {
+  width: 160px;
+  height: 50px;
+  background-color: #d1a954;
+
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+}
+
+section {
+  background-color: #333 !important;
+}
+
+input {
+  border: 1px solid #616161;
+  background: #444;
+}

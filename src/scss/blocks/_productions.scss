@@ -1,0 +1,95 @@
+
+.productions__list {
+    display: flex;
+    width: 1770px;
+}
+.productions__item {
+   
+    position: relative;
+
+    &::after{
+        // content: '12312';
+        position: absolute;
+        display: block;
+        top: 40px;
+        left: 40px;
+
+
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 1.2px;
+        text-transform: uppercase;
+
+    }
+
+    &::before{
+        
+        position: absolute;
+        display: block;
+        bottom: 90px;
+        left: -35px;
+
+        width: 150px;
+
+        transform: rotate(-90deg);
+
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    }
+}
+
+.productions__item_1{
+    // background: linear-gradient(0deg,
+    //  rgba(51, 51, 51, 0.65) 0%,
+    //   rgba(51, 51, 51, 0.65) 100%),
+    //    url('./../../img/productions/1.jpg'),
+    //     lightgray 50% / cover no-repeat;
+    &::after{
+        content: 'ОСКАР 2020';
+    }
+
+    &::before{
+        content: 'сентябрь 2020';
+    }
+}
+
+.productions__item_2{
+    position: relative;
+}
+
+.productions__item_3{
+    &::after{
+        content: 'золотой грамофон';
+    }
+
+    &::before{
+        content: 'июль 2020';
+    }
+}
+.productions__item_4{
+    &::after{
+        content: 'щелкунчик';
+    }
+
+    &::before{
+        content: 'май 2020';
+    }
+}
+
+.productions__btn{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+    position: absolute;
+    top:  50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+}

@@ -1,0 +1,35 @@
+.nav-icon{
+	display: none;
+	@media (max-width: $tablet-size) {
+		display: block;
+	}
+}
+
+.nav__list{
+	display: flex;
+	gap: 63px;
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 1.8px;
+	padding-right: 30px;
+
+	@media (max-width: $tablet-size ) {
+		display: none;
+	}
+}
+
+.nav_phone{
+	font-size: 16px;
+	font-weight: 700;
+	position: relative;
+	border-bottom: 2px solid #D1A954;
+	@media (max-width: $laptop-mini-size ) {
+		margin-top: 50px;
+		
+	}
+	@media (max-width: $tablet-size ) {
+		margin-top: 0;
+		
+	}
+}

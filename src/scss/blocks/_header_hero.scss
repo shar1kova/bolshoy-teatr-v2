@@ -1,0 +1,14 @@
+.header__hero {
+  display: flex;
+  align-items: center;
+  gap: 125px;
+  margin-top: 191px;
+}
+.header__text {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: start;
+
+  width: 540px;
+}

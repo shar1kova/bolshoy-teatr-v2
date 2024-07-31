@@ -1,0 +1,21 @@
+.partners__list {
+  max-width: 800px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 80px;
+  align-items: center;
+  overflow: hidden;
+  text-align: center;
+  margin: 0 auto;
+  @media (max-width: 880px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.partners__item {
+  align-self: center;
+}
+
+.partners {
+  padding-bottom: 120px;
+}
